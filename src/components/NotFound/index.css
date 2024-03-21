@@ -1,1 +1,10 @@
 /* Write your CSS here */
+.darkTheme {
+  color: #fff;
+  background-color: #000;
+}
+
+.lightTheme {
+  color: #000;
+  background-color: #fff;
+}

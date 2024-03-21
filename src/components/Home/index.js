@@ -7,12 +7,14 @@ const Home = () => (
   <ThemeContext.Consumer>
     {value => {
       const {isDarkTheme} = value
+
+      const homeClassName = isDarkTheme ? 'darkTheme' : 'lightTheme'
       const imgUrl = isDarkTheme
         ? 'https://assets.ccbp.in/frontend/react-js/home-dark-img.png'
         : 'https://assets.ccbp.in/frontend/react-js/home-light-img.png'
 
       return (
-        <div>
+        <div className={homeClassName}>
           <Navbar />
           <img src={imgUrl} alt="home" />
           <h1>Home</h1>

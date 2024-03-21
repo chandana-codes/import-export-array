@@ -1,1 +1,25 @@
 /* Write your CSS here */
+.darkTheme {
+  color: #fff;
+  background-color: #000;
+}
+
+.lightTheme {
+  color: #000;
+  background-color: #fff;
+}
+
+.navRoutes {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 5px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

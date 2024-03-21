@@ -12,6 +12,8 @@ const Navbar = () => (
         toggleTheme()
       }
 
+      const navBarClassName = isDarkTheme ? 'darkTheme' : 'lightTheme'
+
       const websiteLogoUrl = isDarkTheme
         ? 'https://assets.ccbp.in/frontend/react-js/website-logo-dark-theme-img.png'
         : 'https://assets.ccbp.in/frontend/react-js/website-logo-light-theme-img.png'
@@ -21,9 +23,9 @@ const Navbar = () => (
         : 'https://assets.ccbp.in/frontend/react-js/light-theme-img.png'
 
       return (
-        <div>
+        <div className={`${navBarClassName} navContainer`}>
           <img src={websiteLogoUrl} alt="website logo" />
-          <ul>
+          <ul className="navRoutes">
             <li>
               <Link to="/">Home</Link>
             </li>
